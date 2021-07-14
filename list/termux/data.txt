@@ -1,0 +1,3 @@
+app: termux
+package:com.termux
+Launcher:com.termux.app.TermuxActivity
