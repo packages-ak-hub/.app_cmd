@@ -1,3 +1,0 @@
-app: chrome
-package:com.android.chrome
-Launcher:com.google.android.apps.chrome.Main
