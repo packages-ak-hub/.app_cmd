@@ -4,7 +4,7 @@ function open() {
  echo no app found |lolcat
 }
 # app whatsapp
-function open$appname() {
+function openwhatsapp() {
     if [ -f "/$HOME/openapp/bin/list/whatsapp.sh" ]
     then 
     bash /$HOME/openapp/bin/list/whatsapp.sh
