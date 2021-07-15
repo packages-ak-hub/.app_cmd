@@ -1,3 +1,0 @@
-app: whatsapp
-package:com.whatsapp
-Launcher:com.whatsapp.Main
