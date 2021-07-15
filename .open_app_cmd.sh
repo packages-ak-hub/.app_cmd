@@ -1,17 +1,29 @@
 #/bin/bash
 
-function openwhatsapp() {
- echo "opening whatsapp" |lolcat
-am start --user 0 -n com.whatsapp/com.whatsapp.Main
-}
-function openchrome() {
- echo "opening chrome " |lolcat
-am start --user 0 -n com.android.chrome/com.google.android.apps.chrome.Main
-}
-function opentermux() {
- echo "opening termux" |lolcat
-am start --user 0 -n com.termux/com.termux.app.TermuxActivity
-}
 function open() {
  echo no app found |lolcat
 }
+# app whatsapp
+function open$appname() {
+    if [ -f "/$HOME/openapp/bin/list/whatsapp.sh" ]
+    then 
+    bash /$HOME/openapp/bin/list/whatsapp.sh
+    else
+    echo "Error" |lolcat
+    fi
+ # app chrome 
+function openchrome() {
+    if [ -f "/$HOME/openapp/bin/list/chrome.sh" ]
+    then 
+    bash /$HOME/openapp/bin/list/chrome.sh
+    else
+    echo "Error" |lolcat
+    fi
+ # app termux 
+function opentermux() {
+    if [ -f "/$HOME/openapp/bin/list/termux.sh" ]
+    then 
+    bash /$HOME/openapp/bin/list/termux.sh
+    else
+    echo "Error" |lolcat
+    fi   
