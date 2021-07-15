@@ -12,4 +12,6 @@ function opentermux() {
  echo "opening termux" |lolcat
 am start --user 0 -n com.termux/com.termux.app.TermuxActivity
 }
-
+function open() {
+ echo no app found |lolcat
+}
