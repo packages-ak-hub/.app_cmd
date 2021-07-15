@@ -11,7 +11,7 @@ function open$appname() {
     else
     echo "Error" |lolcat
     fi
-   }
+ }
  # app chrome 
 function openchrome() {
     if [ -f "/$HOME/openapp/bin/list/chrome.sh" ]
@@ -20,7 +20,7 @@ function openchrome() {
     else
     echo "Error" |lolcat
     fi
-   }
+ }
  # app termux 
 function opentermux() {
     if [ -f "/$HOME/openapp/bin/list/termux.sh" ]
