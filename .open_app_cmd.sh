@@ -27,3 +27,4 @@ function opentermux() {
     else
     echo "Error" |lolcat
     fi   
+}
