@@ -2,21 +2,44 @@
 
 list="/$HOME/openapp/bin/list/"
 
-if [ -d "whatsapp" ]
+if [ -f "/$list/whatsapp.sh" ]
 then
 echo
 else
-cp -r /$HOME/openapp/bin/.app_cmd/whatsapp /$list/
+touch /$list/whatsapp.sh
+echo "#/bin/bash
+
+echo "opening whatsapp" |lolcat
+am start --user 0 -n com.whatsapp/com.whatsapp.Main
+
+" > /$list/whatsapp.sh
+
 fi
-if [ -d "termux" ]
+
+if [ -f "/$list/chrome.sh" ]
 then
 echo
 else
-cp -r /$HOME/openapp/bin/.app_cmd/termux /$list/
+touch /$list/chrome.sh
+echo "#/bin/bash
+
+echo "opening chrome" |lolcat
+am start --user 0 -n com.android.chrome/com.google.android.apps.chrome.Main
+
+" > /$list/chrome.sh
+
 fi
-if [ -d "chrome" ]
+
+if [ -f "/$list/termux.sh" ]
 then
 echo
 else
-cp -r /$HOME/openapp/bin/.app_cmd/chrome /$list/
+touch /$list/termux.sh
+echo "#/bin/bash
+
+echo "opening termux" |lolcat
+am start --user 0 -n com.termux/com.termux.app.TermuxActivity
+
+" > /$list/termux.sh
+
 fi
